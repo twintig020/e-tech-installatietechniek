@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-Tech Installatietechniek — Werkwijze. Elektricien in Amsterdam. 06-48939868.">
+  <title>Werkwijze | E-Tech Installatietechniek</title>
+  <link rel="preload" as="style" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Werkwijze | E-Tech Installatietechniek">
+  <meta property="og:description" content="Betrouwbare elektra in Amsterdam">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="E-Tech Installatietechniek - Home">E-Tech Installatietechniek</a>
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu openen">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li><a href="/services.html" data-i18n="nav.services">Diensten & Prijzen</a></li>
+          <li><a href="/gallery.html" class="active" data-i18n="nav.gallery">Werkwijze</a></li>
+          <li><a href="/team.html" data-i18n="nav.team">Over ons</a></li>
+          <li><a href="/contact.html" class="cta-nav" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Taal selecteren">
+        <button lang="nl" data-lang="nl" class="active" aria-pressed="true">NL</button>
+        <button lang="en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" data-i18n="werkwijze.hero_title">Onze Werkwijze</h1>
+        <p class="hero-subtitle" data-i18n="werkwijze.hero_subtitle">Van eerste contact tot opgeleverde installatie — dit is hoe we werken.</p>
+      </div>
+    </section>
+
+    <section class="services-preview" aria-labelledby="steps-title">
+      <div class="container">
+        <h2 id="steps-title" data-i18n="werkwijze.steps_title">In 4 stappen</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 data-i18n="step.1.title">Neem contact op</h3>
+            <p data-i18n="step.1.text">Bel of vul het formulier in met een omschrijving van de klus.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 data-i18n="step.2.title">Offerte & planning</h3>
+            <p data-i18n="step.2.text">U ontvangt een duidelijke offerte en we plannen een geschikte datum.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 data-i18n="step.3.title">Uitvoering</h3>
+            <p data-i18n="step.3.text">Onze vakman voert de werkzaamheden vakkundig en veilig uit.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">4</div>
+            <h3 data-i18n="step.4.title">Oplevering</h3>
+            <p data-i18n="step.4.text">We lopen de installatie met u door en zorgen dat alles werkt zoals het hoort.</p>
+          </div>
+        </div>
+        <p class="text-center"><a href="/contact.html" class="btn btn-primary" data-i18n="werkwijze.cta">Neem contact op</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="logo">E-Tech Installatietechniek</p>
+        <p data-i18n="footer.tagline">Betrouwbare elektra in Amsterdam</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigatie">
+        <h3 data-i18n="footer.quick_links">Snel</h3>
+        <ul>
+          <li><a href="/services.html" data-i18n="nav.services">Diensten & Prijzen</a></li>
+          <li><a href="/gallery.html" data-i18n="nav.gallery">Werkwijze</a></li>
+          <li><a href="/team.html" data-i18n="nav.team">Over ons</a></li>
+          <li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <address>
+          <p>Titus van Rijnstraat 178, 1058 GB Amsterdam</p>
+          <p><a href="tel:+31648939868">06-48939868</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> E-Tech Installatietechniek</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

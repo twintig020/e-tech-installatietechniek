@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-Tech Installatietechniek — Contact. Elektricien in Amsterdam. 06-48939868.">
+  <title>Contact | E-Tech Installatietechniek</title>
+  <link rel="preload" as="style" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | E-Tech Installatietechniek">
+  <meta property="og:description" content="Betrouwbare elektra in Amsterdam">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="E-Tech Installatietechniek - Home">E-Tech Installatietechniek</a>
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu openen">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li><a href="/services.html" data-i18n="nav.services">Diensten & Prijzen</a></li>
+          <li><a href="/gallery.html" data-i18n="nav.gallery">Werkwijze</a></li>
+          <li><a href="/team.html" data-i18n="nav.team">Over ons</a></li>
+          <li><a href="/contact.html" class="active cta-nav" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Taal selecteren">
+        <button lang="nl" data-lang="nl" class="active" aria-pressed="true">NL</button>
+        <button lang="en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" data-i18n="contact.hero_title">Neem contact op</h1>
+        <p class="hero-subtitle" data-i18n="contact.hero_subtitle">Heeft u een vraag of wilt u een offerte? Vul het formulier in of bel ons direct.</p>
+      </div>
+    </section>
+
+    <section class="contact-preview" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <address class="contact-info">
+              <p><strong data-i18n="contact.address_label">Adres:</strong> Titus van Rijnstraat 178, 1058 GB Amsterdam</p>
+              <p><strong data-i18n="contact.phone_label">Telefoon:</strong> <a href="tel:+31648939868">06-48939868</a></p>
+              <p><strong data-i18n="contact.hours_label">Openingstijden:</strong> <span data-i18n="contact.hours_value">Bel voor de actuele openingstijden</span></p>
+            </address>
+
+            <!-- QUOTE-REQUEST FORM (default). For booking-type businesses (e.g. physiotherapy),
+                 swap the "service" select + message for: naam, telefoon, gewenste datum, gewenste tijd, reden van bezoek. -->
+            <form class="contact-form" data-formspree action="https://formspree.io/f/REPLACE_WITH_REAL_FORM_ID" method="POST" style="margin-top: var(--space-xl);">
+              <div class="form-group">
+                <label for="name" data-i18n="form.name_label">Naam</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="form.phone_label">Telefoonnummer</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="form.email_label">E-mailadres</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="service" data-i18n="form.service_label">Waar gaat het om?</label>
+                <select id="service" name="service">
+                  <option data-i18n="service.1.title">Algemene elektra installaties</option>
+                  <option data-i18n="service.2.title">Groepenkasten vervangen</option>
+                  <option data-i18n="service.3.title">Verlichting & schakelmateriaal</option>
+                  <option data-i18n="service.4.title">Elektra keuringen (NEN 3140/1010)</option>
+                  <option data-i18n="service.5.title">Storingsdienst</option>
+                  <option data-i18n="form.service_other">Anders</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="form.message_label">Bericht</label>
+                <textarea id="message" name="message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-i18n="form.submit">Versturen</button>
+              <p class="form-note" data-i18n="form.note">We reageren doorgaans binnen 1 werkdag.</p>
+            </form>
+          </div>
+
+          <div class="map-container" aria-label="Locatie op de kaart">
+            <iframe src="https://www.google.com/maps?q=Titus+van+Rijnstraat+178,+1058+GB+Amsterdam&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="logo">E-Tech Installatietechniek</p>
+        <p data-i18n="footer.tagline">Betrouwbare elektra in Amsterdam</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigatie">
+        <h3 data-i18n="footer.quick_links">Snel</h3>
+        <ul>
+          <li><a href="/services.html" data-i18n="nav.services">Diensten & Prijzen</a></li>
+          <li><a href="/gallery.html" data-i18n="nav.gallery">Werkwijze</a></li>
+          <li><a href="/team.html" data-i18n="nav.team">Over ons</a></li>
+          <li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <address>
+          <p>Titus van Rijnstraat 178, 1058 GB Amsterdam</p>
+          <p><a href="tel:+31648939868">06-48939868</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> E-Tech Installatietechniek</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
